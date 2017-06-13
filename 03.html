@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>01</title>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            var color = 'green';
+            var test = {
+                color:'blue',
+                getColor:function(){
+                    var color = "red";
+                    alert(this.color);
+                }
+            }
+            var getColor = test.getColor;
+            getColor();
+            test.getColor();
+
+
+
+            
+        </script>
+    </body>
+</html>
