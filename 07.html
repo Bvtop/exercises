@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>07</title>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            function A(){
+                this.do = function(){return 'foo';};
+            }
+            A.prototype = function(){
+                this.do = function(){return 'bar';};
+            };
+            var x = new A().do();
+            // x的值是
+            // foo
+        </script>
+    </body>
+</html>
